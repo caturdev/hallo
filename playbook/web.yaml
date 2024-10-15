@@ -3,6 +3,6 @@
   tasks:
   - name: web
     ansible.builtin.command:
-      cmd:
-      - cd /home/catur/deployment/hallo/compose/web
+      argv:
       - docker compose up -d
+      creates: /home/catur/deployment/hallo/compose/web
