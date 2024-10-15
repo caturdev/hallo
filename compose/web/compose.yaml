@@ -1,6 +1,6 @@
 services:
   kasoari-net:
-    image: bitcodenetwork/kasoari-net
+    image: salmooon/hallo
     restart: unless-stopped
     ports:
       - 3000:4000
