@@ -1,7 +1,7 @@
 - name: demo inventory
   hosts: demo
   tasks:
-  - name: web
+  - name: deploy web compose
     ansible.builtin.command:
       argv:
       - docker compose up -d

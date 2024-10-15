@@ -1,10 +1,8 @@
 services:
-  kasoari-net:
+  demo-web:
     image: salmooon/hallo
     restart: unless-stopped
     ports:
       - 3000:4000
     environment:
       - NODE_ENV=production
-    networks:
-      - kasoari
