@@ -1,0 +1,6 @@
+- host: demo
+  tasks:
+  - name: web
+    cmd:
+    - cd /home/catur/deployment/hallo/compose/web
+    - docker compose up -d
