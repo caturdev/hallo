@@ -5,5 +5,5 @@
     ansible.builtin.command:
       argv: 
       - cd /home/catur/deployment/hallo/compose/web
-      - docker compose up -a
+      - docker compose up -d
       # creates: /home/catur/deployment/hallo/compose/web
