@@ -2,8 +2,8 @@
   hosts: demo
   tasks:
   - name: deploy web compose
+    args:
+      chdir: /home/catur/deployment/hallo/compose/web
     ansible.builtin.command:
-      argv: 
-      - cd /home/catur/deployment/hallo/compose/web
+      argv:
       - docker compose up -d
-      # creates: /home/catur/deployment/hallo/compose/web
