@@ -5,5 +5,4 @@
     args:
       chdir: /home/catur/deployment/hallo/compose/web
     ansible.builtin.command:
-      argv:
-      - docker compose up -d
+      cmd: docker compose up -d
