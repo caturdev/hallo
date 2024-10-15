@@ -1,0 +1,10 @@
+services:
+  kasoari-net:
+    image: bitcodenetwork/kasoari-net
+    restart: unless-stopped
+    ports:
+      - 3000:4000
+    environment:
+      - NODE_ENV=production
+    networks:
+      - kasoari
