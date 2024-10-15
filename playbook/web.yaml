@@ -2,6 +2,7 @@
   hosts: demo
   tasks:
   - name: web
-    cmd:
-    - cd /home/catur/deployment/hallo/compose/web
-    - docker compose up -d
+    ansible.builtin.command:
+      cmd:
+      - cd /home/catur/deployment/hallo/compose/web
+      - docker compose up -d
