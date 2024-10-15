@@ -5,4 +5,4 @@
     ansible.builtin.command:
       argv:
       - docker compose up -d
-      creates: /home/catur/deployment/hallo/compose/web
+      creates: /home/catur/deployment/hallo/compose/webx
