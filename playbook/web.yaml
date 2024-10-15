@@ -1,5 +1,5 @@
 - name: demo inventory
-  host: all
+  hosts: demo
   tasks:
   - name: web
     cmd:
