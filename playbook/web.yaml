@@ -3,5 +3,7 @@
   tasks:
   - name: deploy web compose
     ansible.builtin.command:
-      cmd: docker compose up -a
-      creates: /home/catur/deployment/hallo/compose/web
+      argv: 
+      - cd /home/catur/deployment/hallo/compose/web
+      - docker compose up -a
+      # creates: /home/catur/deployment/hallo/compose/web
