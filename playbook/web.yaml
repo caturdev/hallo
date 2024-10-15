@@ -1,4 +1,5 @@
-- host: demo
+- name: demo inventory
+  host: all
   tasks:
   - name: web
     cmd:
