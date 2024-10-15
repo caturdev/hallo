@@ -1,8 +1,9 @@
 services:
   demo-web:
+    container_name: demo-web
     image: salmooon/hallo
     restart: unless-stopped
     ports:
-      - 3000:4000
+      - 4000:3000
     environment:
       - NODE_ENV=production
